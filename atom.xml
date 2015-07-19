@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Hyde</title>
+ <link href="http://hyde.getpoole.com/atom.xml" rel="self"/>
+ <link href="http://hyde.getpoole.com/"/>
+ <updated>2015-07-19T14:47:56+03:00</updated>
+ <id>http://hyde.getpoole.com</id>
+ <author>
+   <name>Vyacheslav Enis</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Initial Git configuration</title>
+   <link href="http://hyde.getpoole.com/source%20control%20system/2012/11/11/initial-git-configuration/"/>
+   <updated>2012-11-11T00:00:00+02:00</updated>
+   <id>http://hyde.getpoole.com/source%20control%20system/2012/11/11/initial-git-configuration</id>
+   <content type="html">&lt;p&gt;After Git is set up it is good idea to customize it.&lt;/p&gt;
+
+&lt;h2&gt;Information to identify Yourself&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global user.name &lt;span class=&quot;s2&quot;&gt;&amp;quot;John Doe&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global user.email johndoe@example.com&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Preferred editor&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global core.editor nano&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Diff/Merge tool&lt;/h2&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global merge.tool kdiff3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Prevent some possible problems&lt;/h2&gt;
+
+&lt;p&gt;Defines the action git push should take if no refspec is given on the command line, no refspec is configured in the
+remote, and no refspec is implied by any of the options given on the command line. &amp;quot;Current&amp;quot; means push the current
+branch to a branch of the same name.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global push.default current&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Useful configuration&lt;/h2&gt;
+
+&lt;p&gt;Here are some useful configuration values described.&lt;/p&gt;
+
+&lt;p&gt;In addition to .gitignore (per-directory) and .git/info/exclude, git looks into this file for patterns of files which
+are not meant to be tracked. &amp;quot;~/&amp;quot; is expanded to the value of $HOME and &amp;quot;~user/&amp;quot; to the specified user’s home directory&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global core.excludesfile &amp;lt;path to file&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Specify a file to use as the template for new commit messages. &amp;quot;~/&amp;quot; is expanded to the value of $HOME and &amp;quot;~user/&amp;quot;
+to the specified user’s home directory.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git config --global commit.template &amp;lt;path to file&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Useful commands&lt;/h2&gt;
+
+&lt;p&gt;Here are some useful commands described&lt;/p&gt;
+
+&lt;p&gt;Displaying console graph log&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git log --oneline --graph --decorate&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Show a word diff highlighting changed words using only colors&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell-session&quot; data-lang=&quot;shell-session&quot;&gt;&lt;span class=&quot;gp&quot;&gt;me@host$&lt;/span&gt; git diff --word-diff&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;color&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</content>
+ </entry>
+ 
+
+</feed>
