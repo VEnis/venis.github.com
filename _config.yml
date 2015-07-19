@@ -19,7 +19,7 @@ author:
 
 paginate:         5
 
-exclude: [vendor]
+exclude: [vendor,Gemfile,Gemfile.lock,Rakefile]
 
 # Custom vars
 version:          2.1.0
