@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Hyde</title>
+ <title>VEnis blog</title>
  <link href="http://hyde.getpoole.com/atom.xml" rel="self"/>
  <link href="http://hyde.getpoole.com/"/>
- <updated>2015-07-19T15:00:30+03:00</updated>
+ <updated>2015-07-19T12:36:45+00:00</updated>
  <id>http://hyde.getpoole.com</id>
  <author>
    <name>Vyacheslav Enis</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Initial Git configuration</title>
    <link href="http://hyde.getpoole.com/source%20control%20system/2012/11/11/initial-git-configuration/"/>
-   <updated>2012-11-11T00:00:00+02:00</updated>
+   <updated>2012-11-11T00:00:00+00:00</updated>
    <id>http://hyde.getpoole.com/source%20control%20system/2012/11/11/initial-git-configuration</id>
    <content type="html">&lt;p&gt;After Git is set up it is good idea to customize it.&lt;/p&gt;
 
