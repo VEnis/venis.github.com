@@ -11,7 +11,7 @@
 
   <title>
     
-      VEnis blog &middot; A Jekyll theme
+      Static pages in Symfony &middot; VEnis blog
     
   </title>
 
@@ -44,7 +44,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item active" href="/">Home</a>
+      <a class="sidebar-nav-item" href="/">Home</a>
 
       
 
@@ -78,40 +78,10 @@
 
 
     <div class="content container">
-      <div class="posts">
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/programming/2013/01/20/how-to-save-files-right/">
-        How to save files right?
-      </a>
-    </h1>
-
-    <span class="post-date">20 Jan 2013</span>
-
-    <ol>
-<li>Create temporary file. Handle all possible exceptions.</li>
-<li>Write data to that temporary file. Handle all possible exceptions.</li>
-<li>Close temporary file. During that exceptions are also possible.</li>
-<li>If all previous steps completes successfully, rename temporary file to existing file and handle all possible exceptions.</li>
-</ol>
-
-<p>Steps 1-3 can be combined together if there is a function available that creates file with given content.</p>
-
-<p>Following those steps prevents a lot of failures like insufficient disk space or reset during file saving.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/symfony/2012/12/11/static-pages-in-symfony/">
-        Static pages in Symfony
-      </a>
-    </h1>
-
-    <span class="post-date">11 Dec 2012</span>
-
-    <p>Almost all websites have some kind of static pages that does not need any logic.
+      <div class="post">
+  <h1 class="post-title">Static pages in Symfony</h1>
+  <span class="post-date">11 Dec 2012</span>
+  <p>Almost all websites have some kind of static pages that does not need any logic.
 Usually they have empty controller that looks like:</p>
 
 <div class="highlight"><pre><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
@@ -160,78 +130,33 @@ everything right in the routing configuration file:</p>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/source%20control%20system/2012/11/11/initial-git-configuration/">
-        Initial Git configuration
-      </a>
-    </h1>
-
-    <span class="post-date">11 Nov 2012</span>
-
-    <p>After Git is set up it is good idea to customize it.</p>
-
-<h2>Information to identify Yourself</h2>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git config --global user.name <span class="s2">&quot;John Doe&quot;</span>
-<span class="gp">me@host$</span> git config --global user.email johndoe@example.com</code></pre></div>
-
-<h2>Preferred editor</h2>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git config --global core.editor nano</code></pre></div>
-
-<h2>Diff/Merge tool</h2>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git config --global merge.tool kdiff3</code></pre></div>
-
-<h2>Prevent some possible problems</h2>
-
-<p>Defines the action git push should take if no refspec is given on the command line, no refspec is configured in the
-remote, and no refspec is implied by any of the options given on the command line. &quot;Current&quot; means push the current
-branch to a branch of the same name.</p>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git config --global push.default current</code></pre></div>
-
-<h2>Useful configuration</h2>
-
-<p>Here are some useful configuration values described.</p>
-
-<p>In addition to .gitignore (per-directory) and .git/info/exclude, git looks into this file for patterns of files which
-are not meant to be tracked. &quot;~/&quot; is expanded to the value of $HOME and &quot;~user/&quot; to the specified user’s home directory</p>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git config --global core.excludesfile &lt;path to file&gt;</code></pre></div>
-
-<p>Specify a file to use as the template for new commit messages. &quot;~/&quot; is expanded to the value of $HOME and &quot;~user/&quot;
-to the specified user’s home directory.</p>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git config --global commit.template &lt;path to file&gt;</code></pre></div>
-
-<h2>Useful commands</h2>
-
-<p>Here are some useful commands described</p>
-
-<p>Displaying console graph log</p>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git log --oneline --graph --decorate</code></pre></div>
-
-<p>Show a word diff highlighting changed words using only colors</p>
-
-<div class="highlight"><pre><code class="language-shell-session" data-lang="shell-session"><span class="gp">me@host$</span> git diff --word-diff<span class="o">=</span>color</code></pre></div>
-
-  </div>
-  
 </div>
 
-<div class="pagination">
-  
-    <span class="pagination-item older">Older</span>
-  
-  
-    <span class="pagination-item newer">Newer</span>
-  
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/programming/2013/01/20/how-to-save-files-right/">
+            How to save files right?
+            <small>20 Jan 2013</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/source%20control%20system/2012/11/11/initial-git-configuration/">
+            Initial Git configuration
+            <small>11 Nov 2012</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
 </div>
+
     </div>
 
   </body>
